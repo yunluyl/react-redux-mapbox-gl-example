@@ -1,6 +1,7 @@
 import React from 'react';
 import mapboxgl from 'mapbox-gl';
 import Mapbox from 'react-redux-mapbox-gl';
+import mapAccessToken from './mapToken.js';
 
 class MapContainer extends React.Component
 {
@@ -36,7 +37,7 @@ class MapContainer extends React.Component
 		return (
 			<Mapbox
 				mapboxgl={mapboxgl}
-				accessToken='pk.eyJ1IjoibHV5dW4xOTg5OTMiLCJhIjoiY2lwanczdmVnMDF6NHRlbTQ0dHdkemJ3ZCJ9.jmWyDcYef7dh8fxuXP3nZg'
+				accessToken={mapAccessToken}
 				getMap={this.getMap}
 				style={this.mapStyle}
 				options={this.mapOptions}

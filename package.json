@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webpack --progress"
+    "test": "node ./getMapToken.js && webpack --progress"
   },
   "author": "yunluyl",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "babel-preset-stage-3": "^6.11.0",
     "json-loader": "^0.5.4",
     "mapbox-gl": "^0.21.0",
+    "prompt": "^1.0.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
