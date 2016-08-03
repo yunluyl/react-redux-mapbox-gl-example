@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./getMapToken.js && webpack --progress"
+    "test": "node ./getMapToken.js && webpack --progress && node ./server.js"
   },
   "author": "yunluyl",
   "license": "MIT",
@@ -29,5 +29,9 @@
     "transform-loader": "^0.2.3",
     "webpack": "^1.13.1",
     "webworkify-webpack": "^1.1.5"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
   }
 }

@@ -15,12 +15,15 @@ class MapContainer extends React.Component
 		this.mapOptions =
 		{
 			style : 'mapbox://styles/mapbox/streets-v9',
-			attributionControl : false
+                        dragPan : true
 		};
 		this.mapStyle =
 		{
-			width : '50%',
-			height : '50%'
+                        position : 'absolute',
+			width : 200,
+			height : 300,
+                        top : 200,
+                        left : 200
 		};
 	}
 
@@ -30,6 +33,8 @@ class MapContainer extends React.Component
 		{
 			console.log('map loaded!');
 		});
+                this.map.addControl(new mapboxgl.Navigation({position: 'bottom-right'}));
+                this.map.addControl(new mapboxgl.Geolocate({position: 'bottom-right'}));
 	}
 
 	render()
