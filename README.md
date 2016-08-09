@@ -3,5 +3,4 @@
 ```
 npm install
 npm test
-Open index.html in your browser
 ```
