@@ -20,10 +20,8 @@ class MapContainer extends React.Component
 		this.mapStyle =
 		{
                         position : 'absolute',
-			width : 200,
-			height : 300,
-                        top : 200,
-                        left : 200
+			width : '100%',
+			height : '100%',
 		};
 	}
 
